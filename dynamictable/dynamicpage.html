@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic HTML Page</title>
+  </head>
+  <body id="b">
+    <script>
+      var table=document.createElement("table");
+      var tr1=document.createElement("tr");
+      var tr2=document.createElement("tr");
+      var tr3=document.createElement("tr");
+      var td11=document.createElement("td");
+      var td12=document.createElement("td");
+      var td13=document.createElement("td");
+      var td21=document.createElement("td");
+      var td22=document.createElement("td");
+      var td23=document.createElement("td");
+      var td31=document.createElement("td");
+      var td32=document.createElement("td");
+      var td33=document.createElement("td");
+      td11.innerHTML=1;
+      td12.innerHTML=2;
+      td13.innerHTML=3;
+      td21.innerHTML=4;
+      td22.innerHTML=5;
+      td23.innerHTML=6;
+      td31.innerHTML=7;
+      td32.innerHTML=8;
+      td33.innerHTML=9;
+      tr1.appendChild(td11);
+      tr1.appendChild(td12);
+      tr1.appendChild(td13);
+      tr2.appendChild(td21);
+      tr2.appendChild(td22);
+      tr2.appendChild(td23);
+      tr3.appendChild(td31);
+      tr3.appendChild(td32);
+      tr3.appendChild(td33);
+      table.appendChild(tr1);
+      table.appendChild(tr2);
+      table.appendChild(tr3);
+      var body=document.getElementById("b");
+      body.appendChild(table);
+      table.border="4";
+      table.padding="20px";
+    </script>
+  </body>
+</html>

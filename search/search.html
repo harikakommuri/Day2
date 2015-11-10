@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>searching</title>
+</head>
+<body id="b">
+  <lable>enter search element</lable>
+  <input type="text" id="element" placeholder="enter either 0 or 1"><br><br>
+  <button onclick="search()">search</button>
+  <p id="demo"></p>
+  <script>
+    var table=document.createElement("table");
+    var tr1=document.createElement("tr");
+    var tr2=document.createElement("tr");
+    var tr3=document.createElement("tr");
+    var td11=document.createElement("td");
+    var td12=document.createElement("td");
+    var td13=document.createElement("td");
+    var td21=document.createElement("td");
+    var td22=document.createElement("td");
+    var td23=document.createElement("td");
+    var td31=document.createElement("td");
+    var td32=document.createElement("td");
+    var td33=document.createElement("td");
+    td11.innerHTML=1;
+    td12.innerHTML=0;
+    td13.innerHTML=0;
+    td21.innerHTML=1;
+    td22.innerHTML=1;
+    td23.innerHTML=0;
+    td31.innerHTML=1;
+    td32.innerHTML=0;
+    td33.innerHTML=1;
+    tr1.appendChild(td11);
+    tr1.appendChild(td12);
+    tr1.appendChild(td13);
+    tr2.appendChild(td21);
+    tr2.appendChild(td22);
+    tr2.appendChild(td23);
+    tr3.appendChild(td31);
+    tr3.appendChild(td32);
+    tr3.appendChild(td33);
+    table.appendChild(tr1);
+    table.appendChild(tr2);
+    table.appendChild(tr3);
+    var body=document.getElementById("b");
+    body.appendChild(table);
+    table.border="4";
+    function search()
+    {
+      var s=document.getElementById("element").value;
+    for(var i=0;i<table.rows.length;i++)
+    {
+      for(var j=0;j<table.rows[i].cells.length;j++)
+      {
+        if(table.rows[i].cells[j].innerHTML==s)
+        table.rows[i].cells[j].style.background="#dcdcdc";
+      }
+    }
+  }
+  </script>
+</body>
+</html>

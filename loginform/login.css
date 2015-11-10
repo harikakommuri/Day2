@@ -1,0 +1,81 @@
+
+body
+  {
+    background: #222;
+  }
+#loginpage
+  {
+    background: #fff;
+    border-radius: 1%;
+    height: 400px;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 370px;
+  }
+input
+  {
+    background: #eee;
+    height: 25px;
+    left: 10px;
+    position: relative;
+    width: 300px;
+  }
+#login
+  {
+    background: #6495ed;
+    color: white;
+    height: 35px;
+    left: 20px;
+    position: relative;
+    width: 300px;
+  }
+#or
+  {
+    background: #dcdcdc;
+    border-radius: 60%;
+    position: absolute;
+    top: 365px;
+    left:620px;
+  }
+#g
+  {
+    float: left;
+  }
+#f
+  {
+    float: left;
+  }
+#signin
+  {
+    background: #cd5c5c;
+    color: white;
+    left: 10px;
+    position: relative;
+  }
+
+#fblogin
+  {
+    background: #4169e1;
+    color: white;
+    left: 170px;
+    position: relative;
+  }
+#forgot
+  {
+    color: blue;
+    display: inline;
+    left: 10px;
+    position: relative;
+  }
+#signup
+  {
+    color: blue;
+    display: inline;
+    left: 150px;
+    position: relative;
+  }
+  hr
+  {
+    color: #dcdcdc;
+  }

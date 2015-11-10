@@ -1,0 +1,2 @@
+Created a new loginpage using css and html.
+Covered javascript concepts 
